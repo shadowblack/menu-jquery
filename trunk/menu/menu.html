@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<script src="jquery-1.4.4.min.js"></script>
+<script src="jquery-menu.js"></script>
+<script>
+	// Plugin para crear efectos en el Menu de la aplicacion.
+	jQuery(function(){
+		var obj = 	{	
+						click : {img:["a.jpg","b.jpg","c.jpg"], event : function(){alert("click")} },
+						hover :  {img:Array(["f","g"],["i","j"]), event : function(){alert("hover")}}, 
+						mouseover : {img:["k","l"], event : function(){alert("mouseover")}},
+						mouseout :  {img:["m","n"], event : function(){alert("mouseout")}}
+					};
+				obj	=  "";
+		jQuery("#img_001").menueimg(obj);
+	});
+</script>
+</head>
+
+<body>
+	
+	
+</body>
+</html>
