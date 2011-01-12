@@ -9,19 +9,22 @@
 	// Plugin para crear efectos en el Menu de la aplicacion.
 	jQuery(function(){
 		var obj = 	{	
-						click : {img:["a.jpg","b.jpg","c.jpg"], event : function(){alert("click")} },
+						click : {img:["img/a.jpeg","img/c.jpg"], event : function(){alert("click")} },
 						hover :  {img:Array(["f","g"],["i","j"]), event : function(){alert("hover")}}, 
 						mouseover : {img:["k","l"], event : function(){alert("mouseover")}},
 						mouseout :  {img:["m","n"], event : function(){alert("mouseout")}}
 					};
-				obj	=  "";
+				//obj	=  "";
+		
 		jQuery("#img_001").menueimg(obj);
+		jQuery("#img_002").menueimg({click : {img:["img/a.jpeg","img/c.jpg"]}});
 	});
 </script>
 </head>
 
 <body>
-	
+	<img id="img_001" src = "img/c.jpg">
+	<img id="img_002" src = "img/c.jpg">
 	
 </body>
 </html>
