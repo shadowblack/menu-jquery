@@ -7,18 +7,25 @@
 <script src="jquery-menu.js"></script>
 <script>
 	// Plugin para crear efectos en el Menu de la aplicacion.
-	jQuery(function(){
-		var obj = 	{	
+	var demo = jQuery(function(){
+		var obj = 	[{	
+						click : {img:["img/a.jpeg","img/c.jpg"], event : function(){alert("click")}, switch : 1},
+						hover :  {img:Array(["f","g"],["i","j"]), event : function(){alert("hover")}}
+						
+					},
+					{	
 						click : {img:["img/a.jpeg","img/c.jpg"], event : function(){alert("click")} },
-						hover :  {img:Array(["f","g"],["i","j"]), event : function(){alert("hover")}}, 
-						mouseover : {img:["k","l"], event : function(){alert("mouseover")}},
-						mouseout :  {img:["m","n"], event : function(){alert("mouseout")}}
-					};
+						hover :  {img:Array(["f","g"],["i","j"]), event : function(){alert("hover")}}
+						
+					}
+					];
 				//obj	=  "";
 		
-		jQuery("#img_001").menueimg(obj);
-		jQuery("#img_002").menueimg({click : {img:["img/a.jpeg","img/c.jpg"]}});
+		jQuery("#img_001,#img_002").menueimg(obj);
+		//jQuery("#img_002").menueimg({click : {img:["img/a.jpeg","img/c.jpg"]}});
 	});
+	
+	console.debug(demo);
 </script>
 </head>
 
